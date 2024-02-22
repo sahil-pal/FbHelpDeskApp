@@ -10,7 +10,6 @@ const userController = {
       fullname : request.body.fullname,
       emailid : request.body.email,
       password: request.body.pwd,
-      isFBpageIntegrated : false
     };
     const promise = userOperations.register(userObject);
     promise

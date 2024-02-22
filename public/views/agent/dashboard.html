@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://assets-global.website-files.com/628202eb7980b612a999fc44/62b3625fb75d80146d5aa97c_favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets-global.website-files.com/628202eb7980b612a999fc44/62a225cdc2f15d1a46a9c5e4_Webclip.png" rel="apple-touch-icon">
+    <script src="https://kit.fontawesome.com/c62ebd3798.js" crossorigin="anonymous"></script>
+    <title>Agent Dashboard | FB Helpdesk</title>
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <link rel="stylesheet" href="../../assets/styles/dashboard.css">
+    <script src="../../scripts/agent/dashboard.mjs" type="module" defer></script>
+    <script src="../../utils/watch.mjs" type="module" defer></script>
 </head>
 <body>
-    dash
+    <div id="container">
+        <div class="dashboard-container grid">
+            <div class="grid-item nav-link">
+                <div class="links">
+                    <img src="https://asset.brandfetch.io/idIegfyRr9/id4nTV92W-.png" alt="richpanel-icon">
+                    <i id="inbox-icon" class="fa-solid fa-inbox"></i>
+                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                </div>
+                <div class="user-profile-pic">
+                    <img id="page-pp" alt="profile-pic">
+                </div>
+            </div>
+            <div class="grid-item conversations">
+                <div class="section-heading">
+                    <div class="heading">
+                        <i class="fa-solid fa-align-left"></i>
+                        <h2>Conversations</h2>
+                    </div>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+            </div>
+            <div class="grid-item message-box">3</div>
+            <div class="grid-item user-info">4</div>
+        </div>
+    </div>
 </body>
+<script async  crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </html>

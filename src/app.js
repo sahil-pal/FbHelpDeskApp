@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use(ROOT + "user", require("./api/routes/users"));
+app.use(ROOT + "messenger", require("./api/routes/messenger.js"));
 
 const server = app.listen(process.env.PORT || 8080, (err) => {
   if (err) {

@@ -7,7 +7,6 @@ const userSchema = new Schema(
     fullname: { type: SchemaTypes.String, required: true },
     emailid: { type: SchemaTypes.String, required: true, unique: true },
     password: { type: SchemaTypes.String, required: true, min: 3, max: 30 },
-    isFBpageIntegrated: { type: SchemaTypes.Boolean, required: true }
   },
   { timestamps: true }
 );

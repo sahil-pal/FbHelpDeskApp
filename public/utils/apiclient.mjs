@@ -1,9 +1,10 @@
 const ApiClient = {
 
   BASE_URL : "http://localhost:3000",
+  LIVE_BASE_URL : "https://fbsampleapp-production.up.railway.app",
 
   postRequest : async function(url, bodyData) {
-    const result = fetch(this.BASE_URL+url, {
+    const result = fetch(this.LIVE_BASE_URL+url, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

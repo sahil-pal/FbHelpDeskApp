@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://assets-global.website-files.com/628202eb7980b612a999fc44/62b3625fb75d80146d5aa97c_favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets-global.website-files.com/628202eb7980b612a999fc44/62a225cdc2f15d1a46a9c5e4_Webclip.png" rel="apple-touch-icon">
+    <script src="https://kit.fontawesome.com/c62ebd3798.js" crossorigin="anonymous"></script>
+    <title>connection Page | FB Helpdesk</title>
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <link rel="stylesheet" href="../../assets/styles/user.css">
+    <script src="../../scripts/agent/connect.mjs" type="module" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="page-body">
+            <div class="container row justify-center align-item-center">
+                <div class="form-box">
+                    <h2 class="text-center">Facebook Page Integration</h2>
+                    <div class="row justify-center text-center submit-btn" id="connect-btn">
+                      Connect Page
+                      <fb:login-button style="display: none;" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                    </div>
+                    <div id="connected">
+                      <p>Integrated Page : <b id="integrated-page-name"> Sample </b></p>
+                      <div class="row justify-center text-center submit-btn" id="disconnect-btn">Delete Integration</div>
+                      <div class="row justify-center text-center submit-btn" id="view-message-btn">Reply to Messages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load the JS SDK asynchronously -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+</html>

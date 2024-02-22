@@ -4,10 +4,12 @@ module.exports = {
       USER: {
         REGISTER: "/register",
         LOGIN: "/login",
-        CONNECT_FB: "/connect-fb",
-        DISCONNECT_FB: "/disconnect-fb",
-        REPLY_MESSAGES: "/view-messages",
-        VIEW_MESSAGE: "/view-message"
+      },
+      MESSENGER : {
+        WEEBHOOKS : "/webhook"
+      },
+      CONVERSATION : {
+        GETALLCONV : "/getconversation"
       }
     },
     STATUS_CODES: {
@@ -18,5 +20,6 @@ module.exports = {
     },
     SCHEMAS: {
       USERS: "users",
+      CONVERSATIONS : "conversations"
     },
   }

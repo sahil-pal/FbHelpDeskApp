@@ -65,3 +65,21 @@ body{
     color: var(--background-blue);
     font-weight: bold;
 }
+
+/* connect Page */
+#connect-btn{
+    display: none;
+}
+#connected{
+    display: none;
+}
+#connected p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+#connected #disconnect-btn{
+    background-color: var(--red);
+}
+#connected #disconnect-btn:hover{
+    background-color: var(--black);
+}
