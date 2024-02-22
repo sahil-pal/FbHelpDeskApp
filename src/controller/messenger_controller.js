@@ -39,7 +39,6 @@ const messageController = {
         if(entry.messaging){
             // Gets the body of the webhook event
           let webhook_event = entry.messaging[0];
-          console.log(webhook_event);
 
           // Get the sender PSID
           let sender_psid = webhook_event.sender.id;
@@ -48,6 +47,7 @@ const messageController = {
           // Check if the event is a message or postback and
           // pass the event to the appropriate handler function
           if (webhook_event.message) {
+            console.log("Message detected : ",webhook_event);
             handleMessage(sender_psid, webhook_event);
           } else if (webhook_event.postback) {
             handlePostback(sender_psid, webhook_event.postback);
@@ -55,7 +55,7 @@ const messageController = {
         }
         else if(entry.changes){
           let webhook_event = entry.changes[0].value;
-          console.log(webhook_event);
+          console.log("Comment detected : ",webhook_event);
         }
       });
 
@@ -78,7 +78,7 @@ function handleMessage(senderId,webhook_event){
     messageDoc : webhook_event,
   }
   convOperations.saveConversation(convObject);
-  ws.send('data changed');
+  // ws.send('data changed');
 }
 
 function handlePostback(senderId,postback){
