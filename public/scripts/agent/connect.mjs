@@ -35,7 +35,7 @@ function initialise(){
 function loginIntoFacebook(){
     FB.login(function(response) {
         console.log(response);
-    }, {scope:"email,pages_manage_metadata, pages_manage_posts,pages_manage_engagement,pages_show_list,pages_messaging, pages_read_user_content"});
+    }, {scope:"email,pages_manage_metadata, pages_manage_posts,pages_manage_engagement,pages_show_list,pages_messaging"});
     //pages_manage_metadata, pages_manage_posts,pages_manage_read_engagement,pages_show_list
     reverseDisplay();
 
